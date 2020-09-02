@@ -13,6 +13,7 @@ def test_line_maker(x1, y1, x2, y2, x, y):
 @pytest.mark.parametrize("x1, y1, x2, y2, x, y", [
     (0, 0, 5, 5, 1, 1, True),
     (0, 0, 5, 5, 1, 9, True),
+    (0, 0, 5, 5, 1, 9, False),
 ])
 def test_point_tester(x1, y1, x2, y2, x, y, expected):
     from unit_test_exercise import point_tester
